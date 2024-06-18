@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-gray-800 focus:outline-none"
+            className="text-white focus:outline-none"
           >
             {isOpen ? (
               <svg
