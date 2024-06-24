@@ -1,5 +1,6 @@
 Scizers Summer24
-Scizers Summer24 is a Next.js web application designed for [insert brief description of your application's purpose].
+Scizers Summer24 is a Next.js web App
+.
 
 Prerequisites
 Before you begin, make sure you have the following installed on your system:
