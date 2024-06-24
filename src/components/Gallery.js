@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const Gallery = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,10 +42,12 @@ const Gallery = ({ images }) => {
           </button>
         </div>
         <div className="relative">
-          <img
+          <Image
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
             className="w-full h-auto rounded-lg shadow-lg"
+            width={800} 
+            height={600} 
           />
           <button
             onClick={prevImage}
@@ -61,15 +64,16 @@ const Gallery = ({ images }) => {
         </div>
         <div className="flex mt-4 space-x-2 w-full items-center justify-between">
           {images.map((image, index) => (
-            <div className="flex justify-center w-48 h-28">
-              <img
-                key={index}
+            <div className="flex justify-center w-48 h-28" key={index}>
+              <Image
                 src={image.src}
                 alt={image.alt}
-                className={`object-cover  rounded-lg cursor-pointer ${
+                className={`object-cover rounded-lg cursor-pointer ${
                   index === currentIndex ? "ring-4 ring-blue-500" : ""
                 }`}
                 onClick={() => selectImage(index)}
+                width={192} 
+                height={112} 
               />
             </div>
           ))}

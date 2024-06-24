@@ -14,7 +14,7 @@ export default function Home() {
     // Add more images as needed
   ];
   return (
-    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] overflow-hidden bg-[#F4F9FF]">
+    <main className="min-h-screen antialiased bg-grid-white/[0.02] overflow-hidden bg-[#F4F9FF]">
       <HeroSection />
       <Benifits />
       <Features />
